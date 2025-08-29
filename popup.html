@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; width: 300px; }
+    #joke { margin-bottom: 10px; font-size: 14px; }
+    #interval-container { margin-top: 10px; }
+    label { font-size: 12px; }
+    input[type="number"] { width: 60px; }
+    button { margin-top: 5px; padding: 5px 10px; font-size: 12px; cursor: pointer; }
+    #toggle-notifications { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div id="joke">Click the button to get a joke!</div>
+  <button id="new-joke">Next Joke</button>
+  <div id="interval-container">
+    <label>
+      <input type="checkbox" id="enable-periodic"> Enable periodic jokes every
+    </label>
+    <input type="number" id="interval-minutes" min="1" max="120" value="60"> minutes
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
